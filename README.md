@@ -15,15 +15,21 @@ Sistema para gerenciar clientes com autenticação segura e funcionalidades de C
 
 ## Passos para Inicializar o Projeto
 
-- 1. Clonar o Repositório
-- 2. Criar arquivo .env seguindo exemplo do .env.example
-- 3. php artisan key:generate
-- 4. Adicione as chaves do Google reCAPTCHA no arquivo .env ou deixar a de desenvolvimento
-- 5. Rodar projeto com sail:
+- Clonar o Repositório
+- Criar arquivo .env seguindo exemplo do .env.example
+- php artisan key:generate
+- Adicione as chaves do Google reCAPTCHA no arquivo .env ou deixar a de desenvolvimento
+- Rodar projeto com sail:
+````bash
 ./vendor/bin/sail up -d
-- 6. rodar migrations:
+````
+- rodar migrations:
+````bash
 ./vendor/bin/sail artisan migrate
-- 7. Para funcionar o tailwind é necessario rodar:
-npm run dev 
+````
+- Para funcionar o style tailwind é necessario rodar:
+````bash
+npm run dev
+````
 
 
